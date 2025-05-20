@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website with Tabs</title>
+    <title>Website with Tabs and Background</title>
     <style>
-        /* Style for the navigation bar */
+        /* Background */
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Navigation Bar */
         .navbar {
             display: flex;
-            background-color: #333; /* Dark background for the tabs */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
             padding: 10px;
         }
         .navbar a {
@@ -19,18 +30,18 @@
             border-radius: 5px;
         }
         .navbar a:hover {
-            background-color: #575757; /* Highlight on hover */
+            background-color: rgba(255, 255, 255, 0.2);
         }
         .navbar a.active {
-            background-color: #4CAF50; /* Active tab highlight */
+            background-color: rgba(0, 128, 0, 0.8);
         }
 
-        /* Background for the website */
-        body {
-            background-color: #f4f4f4; /* Light gray background */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        /* Content Sections */
+        .content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+            border-radius: 10px;
+            margin: 20px;
         }
     </style>
 </head>
@@ -44,19 +55,19 @@
     </div>
 
     <!-- Content Sections -->
-    <div id="home" style="padding: 20px;">
+    <div id="home" class="content">
         <h1>Welcome to the Home Page</h1>
         <p>This is the home section of the website.</p>
     </div>
-    <div id="about" style="padding: 20px;">
+    <div id="about" class="content">
         <h1>About Us</h1>
         <p>Learn more about our mission and values.</p>
     </div>
-    <div id="services" style="padding: 20px;">
+    <div id="services" class="content">
         <h1>Our Services</h1>
         <p>Discover the services we offer.</p>
     </div>
-    <div id="contact" style="padding: 20px;">
+    <div id="contact" class="content">
         <h1>Contact Us</h1>
         <p>Get in touch with us through this form.</p>
     </div>
