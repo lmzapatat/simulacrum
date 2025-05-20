@@ -1,15 +1,64 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Website with Tabs</title>
+    <style>
+        /* Style for the navigation bar */
+        .navbar {
+            display: flex;
+            background-color: #333; /* Dark background for the tabs */
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background-color: #575757; /* Highlight on hover */
+        }
+        .navbar a.active {
+            background-color: #4CAF50; /* Active tab highlight */
+        }
+
+        /* Background for the website */
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
-    <script src="script.js"></script>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Content Sections -->
+    <div id="home" style="padding: 20px;">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is the home section of the website.</p>
+    </div>
+    <div id="about" style="padding: 20px;">
+        <h1>About Us</h1>
+        <p>Learn more about our mission and values.</p>
+    </div>
+    <div id="services" style="padding: 20px;">
+        <h1>Our Services</h1>
+        <p>Discover the services we offer.</p>
+    </div>
+    <div id="contact" style="padding: 20px;">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us through this form.</p>
+    </div>
 </body>
 </html>
