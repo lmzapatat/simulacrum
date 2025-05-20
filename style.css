@@ -1,8 +1,49 @@
 /* style.css */
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background for the body */
 body {
-    background-image: url('assets/images/texture-background.jpg'); /* Path to your image */
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Makes the background fixed while scrolling */
+    background-image: url('assets/images/texture-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white; /* Text color against the background */
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+
+/* Content sections */
+.content-section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+    margin: 20px 0;
+    border-radius: 10px;
 }
