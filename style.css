@@ -31,15 +31,6 @@ body {
     z-index: 1000; /* Ensure it stays on top */
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between the logo and title */
-}
-
-.logo {
-    height: 40px; /* Adjust the size of the logo */
-    max-width: 100%; /* Prevent the logo from overflowing */
 
 .navbar .nav-links {
     list-style: none;
