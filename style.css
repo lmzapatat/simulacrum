@@ -52,10 +52,10 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     overflow: hidden;
-    padding-top: 60px; /* Add space for the fixed navbar */
+    padding-top: 600px; /* Add space for the fixed navbar */
 }
 
 .hero-video {
